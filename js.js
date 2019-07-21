@@ -2,16 +2,16 @@
 // https://github.com/pawelgrzybek/siema/releases/tag/v.1.3.0
 
 function onInitCallback() {
-  console.log('Siema initialised bro :)');
+	console.log('Siema initialised bro :)');
 }
 
 function onChangeCallback() {
-  console.log(`The index of current slide is: ${this.currentSlide}`);
+	console.log(`The index of current slide is: ${this.currentSlide}`);
 }
 
 const mySiema = new Siema({
-  onInit: onInitCallback,
-  onChange: onChangeCallback,
+	onInit: onInitCallback,
+	onChange: onChangeCallback,
 });
 
 const prev = document.querySelector('.prev');
