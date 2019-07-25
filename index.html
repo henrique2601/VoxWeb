@@ -1,42 +1,45 @@
 <!DOCTYPE html>	
 <html lang="pt-br">	
-<head>
-	<meta	charset="UTF-8" />	
-	<title>Vox Social</title>
-	<style media="all">
-		@import "layout.css";
-	</style>
-</head>
+	<head>
+		<meta	charset="UTF-8" />	
+		<title>Vox Social</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<style media="all">
+			@import "layout.css";
+		</style>
+	</head>
 
-<body>
+	<body>
 
-	<header>
-		<div class="area">
-			<h1>VOX SOCIAL</h1>
-			<nav>
-				<ul>
-					<li><a href="#desaparecidos">PÁGINA INICIAL</a></li>
-					<li><a href="#projeto">O PROJETO</a></li>
-					<li><a href="#download">DOWNLOAD</a></li>
-					<li><a href="#equipe">EQUIPE</a></li>
-					<li><a href="#contato">CONTATO</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	
-	<main>
-
-		<section id="desaparecidos">
-			<div class="siema">
-				<div><img src="imagens/desaparecidos.jpg" alt="Desaparecidos" /></div>
-				<div><img src="imagens/desaparecidos_02.jpg" alt="Desaparecidos" /></div>
-				<div><img src="imagens/desaparecidos_03.jpg" alt="Desaparecidos" /></div>
+		<header>
+			<div class="area">
+				<h1>VOX SOCIAL</h1>
+				<nav>
+					<ul>
+						<li><a href="#desaparecidos">PÁGINA INICIAL</a></li>
+						<li><a href="#projeto">O PROJETO</a></li>
+						<li><a href="#download">DOWNLOAD</a></li>
+						<li><a href="#equipe">EQUIPE</a></li>
+						<li><a href="#contato">CONTATO</a></li>
+					</ul>
+				</nav>
 			</div>
-			<div>
-				<button class="prev"><span> Anterior </span></button>
-				<button class="next"><span> Próximo </span></button>
-			</div>
+		</header>
+		
+		<main>
+			<section id="desaparecidos">
+				<h2>DESAPARECIDOS</h2>
+				<div class="slider">
+					<div class="slide active">
+						<img src="imagens/desaparecidos.jpg" alt="Desaparecidos" />
+					</div>
+					<div class="slide">
+						<img src="imagens/desaparecidos_02.jpg" alt="Desaparecidos" />
+					</div>
+					<div class="slide">
+						<img src="imagens/desaparecidos_03.jpg" alt="Desaparecidos" />
+					</div>
+				</div>
 			</section>
 
 			<section id="projeto">
@@ -49,21 +52,23 @@
 			</section>
 
 			<section id="download">
-				<h3>Disponível para Android e iOS</h3>
+				<h2>Disponível para Android e iOS</h2>
 				<article id="left">
-					<figure>
+					<figure class="center">
 						<img src="imagens/android.png" alt="Disponível na Google Play">
 					</figure>
 					<h4>Android</h4>
 				</article>
 				<article>
-					<figure><img src="imagens/ios.png" alt="Disponível na AppStore"></figure>
+					<figure class="center">
+						<img src="imagens/ios.png" alt="Disponível na AppStore">
+					</figure>
 					<h4>iOS</h4>
 				</article>					
 			</section>
 
 			<section id="equipe">
-				<h3>EQUIPE</h3>
+				<h2>EQUIPE</h2>
 				<article>
 					<figure><img src="imagens/paulo.jpg" alt="Paulo Henrique dos Santos"></figure>
 					<h4>Paulo Henrique dos Santos</h4>
@@ -110,10 +115,10 @@
 			</div>
 		</footer>
 		
-		<script src="https://pawelgrzybek.com/siema/assets/siema.min.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 		<script src="js.js"></script>
 		<script>
 			new Siema();
 		</script>
 	</body>
-	</html>
+</html>

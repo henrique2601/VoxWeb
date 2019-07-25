@@ -1,21 +1,15 @@
-// Siema 1.3.0 introuduced a basic callbacks
-// https://github.com/pawelgrzybek/siema/releases/tag/v.1.3.0
+var slides = $('.slide');
+slides.first().before(slides.last());
 
-function onInitCallback() {
-	console.log('Siema initialised bro :)');
+
+function timeout() {
+    setTimeout(function () {
+        slides = $('.slide');
+		var activeSlide = $('.active');
+		slides.last().after(slides.first());
+		activeSlide.removeClass('active').next('.slide').addClass('active');
+        timeout();
+    }, 3000);
 }
 
-function onChangeCallback() {
-	console.log(`The index of current slide is: ${this.currentSlide}`);
-}
-
-const mySiema = new Siema({
-	onInit: onInitCallback,
-	onChange: onChangeCallback,
-});
-
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
-
-prev.addEventListener('click', () => mySiema.prev());
-next.addEventListener('click', () => mySiema.next());
+timeout();
