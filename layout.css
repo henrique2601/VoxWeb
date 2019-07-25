@@ -10,7 +10,7 @@ main {
 
 body {
     font-family: arial, verdana, sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     color: #000000;
     margin-top: 20px;
 }
@@ -112,7 +112,7 @@ nav ul li a {
 }
 
 #projeto div p {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 20px;
     text-align: justify;
     color: #FFFFFF;
@@ -140,14 +140,14 @@ nav ul li a {
 
 #download article h4 {
     text-align: justify;
-    font-size: 15px;
+    font-size: 0.938em;
     color: #0c6189;
     text-align: center;
 
 }
 
 #download article p {
-    font-size: 13px;
+    font-size: 0.813em;
 }
 
 #equipe {
@@ -182,13 +182,13 @@ nav ul li a {
 
 #equipe article h4 {
     text-align: justify;
-    font-size: 15px;
+    font-size: 0.938em;
     color: #FFFFFF;
     text-align: center;
 }
 
 #equipe article p {
-    font-size: 13px;
+    font-size: 0.813em;
     text-align: center;
     color: #FFFFFF;
 
@@ -215,7 +215,7 @@ nav ul li a {
     display: block;
     width: 90%;
     margin: 15px 30px;
-    font-size: 14px;
+    font-size: 0.875em;
     padding-left: 6px;
 }
 
@@ -223,7 +223,7 @@ nav ul li a {
     display: block;
     width: 45%;
     margin: 10px 30px;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 #contato .botao {
@@ -261,7 +261,7 @@ footer .area div h4 {
 }
 
 footer .area div p {
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: bold;
     line-height: 20px;
     color: #fff;
@@ -284,7 +284,7 @@ button {
    text-align: center;
    text-decoration: none;
    display: inline-block;
-   font-size: 16px;
+   font-size: 1em;
    transition: all 0.5s;
    cursor: pointer;
    vertical-align:middle
