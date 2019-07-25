@@ -85,6 +85,13 @@ nav ul li a {
     margin-top: 8px;
     text-align: center;
 }
+
+@media (min-width:767px) {
+    .slider {
+        margin-left: 20% !important;
+    }
+}
+
 #desaparecidos figure {
     width: 100%;
     margin: 0px auto;
@@ -329,7 +336,6 @@ button:hover span:after {
     margin: auto;
     overflow: hidden;
     z-index: -1;
-    margin-left: 10% !important;
   }
   
   .slide {
